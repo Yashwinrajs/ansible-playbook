@@ -1,0 +1,9 @@
+- name: apache-playbook
+  hosts: all
+  become: true
+  tasks:
+  - name: Install apache
+    yum:
+      name: apache
+      state: present
+      update_cache: yes
