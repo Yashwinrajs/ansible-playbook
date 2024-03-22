@@ -4,6 +4,6 @@
   tasks:
   - name: Install apache
     yum:
-      name: apache
+      name: httpd
       state: present
       update_cache: yes
